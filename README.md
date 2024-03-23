@@ -1,0 +1,2 @@
+# KovsarsIvans-JavaScript
+Noslēguma projekts.
