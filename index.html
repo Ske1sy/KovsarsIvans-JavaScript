@@ -2,11 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>JavaScript</title>
+    <title>JavaScript projekts</title>
 </head>
 <body>
+    <div class="container">
+        <div class="header">
+            <h1 id="nosaukums">Ķermeņa masas indeks</h1>
+        </div>
+
+        <div class="main-body">
+            <div class="kalkulators">
+                <h1 id="kalkulator-header" >Ķermeņa masas indeksa kalkulators</h1>
+                <p class="dati">Ķermeņa masa: </p>
+                <input type="text" id="kilogrami" value="kilogrami" onclick="hideDefaultValue(this)"></input>
+                <p class="dati">Ķermeņa augums: </p>
+                <input type="text" id="centimetri" value="centimetri" onclick="hideDefaultValue(this)"></input>
+                <p id="rezultats">0.00</p>
+                <p id="atbilde">norma (piem.)</p>
+                <button id="iesniegt-atbildi">Aprēķināt!</button>
+            </div>
+
+            <div class="body-datums">
+                <p id="diena"> </p>
+                <p id="datums"> </p>
+                <p></p>
+            </div>        
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
