@@ -5,11 +5,26 @@ function hideDefaultValue(input) {
     input.onclick = null
 }
 
-let diena = new Date();
-let nedelasDiena = diena.getDay();
-let dienasNosaukumi = ['Svētdiena', 'Pirmdiena', 'Otrdiena', 'Trešdiena', 'Ceturdiena', 'Piektdiena', 'Sestdiena'];
-let dienasNosaukums = dienasNosaukumi[nedelasDiena];
-document.write(dienasNosaukums);
-let datums = new Date();
-let tagadejaisDatums = datums.toLocaleDateString();
-document.getElementById("datums").innerHTML = tagadejaisDatums;
+// let diena = new Date();
+// let nedelasDiena = diena.getDay();
+// let dienasNosaukumi = ['Svētdiena', 'Pirmdiena', 'Otrdiena', 'Trešdiena', 'Ceturdiena', 'Piektdiena', 'Sestdiena'];
+// let dienasNosaukums = dienasNosaukumi[nedelasDiena];
+// document.write(dienasNosaukums);
+// let datums = new Date();
+// let tagadejaisDatums = datums.toLocaleDateString();
+// document.getElementById("datums").innerHTML = tagadejaisDatums;
+
+function kalkulatorsKMI() {
+    let masa = parseFloat(document.getElementById("kilogrami").value)
+    let augums = parseFloat(document.getElementById("centimetri").value)
+
+    let kmi = masa / ((augums/100) * (augums/100))
+    document.getElementById('rezultats').innerHTML = kmi.toFixed(2);
+    if (kmi < 18) {
+        document.getElementById("atbilde").innerHTML = "zems"
+    } else if (kmi > 18 && kmi < 25) {
+        document.getElementById("atbilde").innerHTML = "norma"
+    } else {
+        document.getElementById("atbilde").innerHTML = "augsts"
+    }
+}

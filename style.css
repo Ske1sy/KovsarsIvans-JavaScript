@@ -1,4 +1,23 @@
 * {
     margin: 0;
-    padding: 0;
+    padding: 0; 
 }
+
+.header {
+    background-color: #EBD9B4;
+}
+
+#nosaukums {
+    padding-top: 2%;
+    padding-left: 4%;
+    padding-bottom: 2%;
+}
+
+.kalkulators {
+    width: 456px;
+    height: 498px;
+    border: black;
+    background-color: gray;
+    margin: 4%;
+}
+

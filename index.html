@@ -16,20 +16,26 @@
         <div class="main-body">
             <div class="kalkulators">
                 <h1 id="kalkulator-header" >Ķermeņa masas indeksa kalkulators</h1>
-                <p class="dati">Ķermeņa masa: </p>
-                <input type="text" id="kilogrami" value="kilogrami" onclick="hideDefaultValue(this)"></input>
-                <p class="dati">Ķermeņa augums: </p>
-                <input type="text" id="centimetri" value="centimetri" onclick="hideDefaultValue(this)"></input>
-                <p id="rezultats">0.00</p>
-                <p id="atbilde">norma (piem.)</p>
-                <button id="iesniegt-atbildi">Aprēķināt!</button>
+                <label class="dati">Ķermeņa masa: <input type="text" id="kilogrami" placeholder="kilogrami" ></input></labe><br>
+                <label class="dati">Ķermeņa augums: <input type="text" id="centimetri" placeholder="centimetri"></input></label>
+                <p id="rezultats"></p>
+                <p id="atbilde"></p>
+                <button id="iesniegt-atbildi" onclick="kalkulatorsKMI()">Aprēķināt!</button>
             </div>
 
             <div class="body-datums">
                 <p id="diena"> </p>
                 <p id="datums"> </p>
                 <p></p>
-            </div>        
+            </div>
+            
+            <div class="body-text">
+                <h1 class="virsraksts">Kas ir ķermeņa masas indeks, keb ĶMI?</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium cumque accusamus nobis officiis, sed illum nihil quaerat commodi quas, eum unde corporis corrupti ducimus! Excepturi ducimus ipsa voluptatibus nihil architecto?</p>
+                <h1 class="virsraksts">Kāpēc ir svarīgi satraukties par to?</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet itaque nemo ducimus nisi quis repellat, similique provident odit eum maxime impedit velit ex commodi ad iste. Aliquam assumenda harum omnis!</p>
+                <p class="uz-otru-lpp"><a href="index-2.html">Papildinformācija </a>par ĶMI</p>        
+            </div>
         </div>
     </div>
 
