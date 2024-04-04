@@ -4,19 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
     <title>JavaScript projekts</title>
 </head>
 <body>
-    <h1>BMI Calculator</h1>
-    <p>Введите ваш вес и рост, чтобы вычислить индекс массы тела (BMI).</p>
-    <label for="weightInput">Введите ваш вес в килограммах:</label>
-    <input type="text" id="weightInput"><br><br>
-    <label for="heightInput">Введите ваш рост в сантиметрах:</label>
-    <input type="text" id="heightInput"><br><br>
-    <button onclick="calculateBMI()">Вычислить BMI</button><br><br>
-    <div id="result"></div>
+    <div class="container">
+        <div class="header">
+            <h1 class="apgalvojums">Papildinformācija par ĶMI</h1>
+        </div>
 
+        <div class="game">
+            <div class="game-header">
+                <p class="game-header-text">Paņemiet pārtraukumu un uzminiet skaitli, ko dators iedomājās!</p>
+            </div>
+            <div class="game-result-data">
+                <p id="rezultats"></p>
+            </div>
+            <div class="game-data">
+                <label class="dati">Ievadiet skaitli: <input type="text" id="skaitlis" placeholder="no 1 līdz 100" min="1" max="100"></input></labe><br>
+            </div>
+            <div class="game-button">
+                <button id="iesniegt-atbildi" onclick="spele()">Uzminēt!</button>
+            </div>
+            <div class="game-result">
+                <p id="speles-rezultats"></p>
+            </div>
+        </div>
+
+        <div class="div-information">
+            <h1 class="title">Kā uzņemt svaru?</h1>
+            <p class="informacija">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto maxime ipsa molestiae dolores eligendi magnam assumenda autem eaque repellat ratione animi repudiandae non, quae ullam ad repellendus accusantium, ab iure?</p>
+            <h1 class="title">Kā nomest lieko svaru?</h1>
+            <p class="informacija">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto maxime ipsa molestiae dolores eligendi magnam assumenda autem eaque repellat ratione animi repudiandae non, quae ullam ad repellendus accusantium, ab iure?</p>
+            <p class="uz-otru-lpp"><a href="index.html">Atgriezties </a>uz galveno daļu</p>        
+            <img src="photos/body-mass-index.jpg" alt="ĶMI">
+        </div>
+    </div>
     <script src="script1.js"></script>
 </body>
 </html>

@@ -15,12 +15,20 @@
 
         <div class="main-body">
             <div class="kalkulators">
-                <h1 id="kalkulator-header" >Ķermeņa masas indeksa kalkulators</h1>
+                <div class="kalkulator-header">
+                    <h1 class="kalkulator-title">Ķermeņa masas indeksa kalkulators</h1>
+                </div>
                 <label class="dati">Ķermeņa masa: <input type="text" id="kilogrami" placeholder="kilogrami" ></input></labe><br>
                 <label class="dati">Ķermeņa augums: <input type="text" id="centimetri" placeholder="centimetri"></input></label>
-                <p id="rezultats"></p>
-                <p id="atbilde"></p>
-                <button id="iesniegt-atbildi" onclick="kalkulatorsKMI()">Aprēķināt!</button>
+                <div class="result-box">
+                    <p id="rezultats"></p>
+                </div>
+                <div class="answer-box">
+                    <p id="atbilde"></p>
+                </div>
+                <div class="button-atbilde">
+                    <button id="iesniegt-atbildi" onclick="kalkulatorsKMI()">Aprēķināt!</button>
+                </div>
             </div>
 
             <div class="body-datums">
