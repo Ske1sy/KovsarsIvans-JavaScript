@@ -5,8 +5,10 @@ function spele() {
         document.getElementById("speles-rezultats").innerHTML = "Ievadiet skaitli no 1 līdz 100.";
     } else if (dati === randomSkaitlis) {
         document.getElementById("speles-rezultats").innerHTML = "Tu laimēji!";
+        document.getElementById("speles-rezultats").style.color = "green"
     } else {
         document.getElementById("speles-rezultats").innerHTML = "Tu zaudēji.";
+        document.getElementById("speles-rezultats").style.color = "red"
     }
 
     document.getElementById("rezultats").innerHTML = randomSkaitlis
