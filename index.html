@@ -4,22 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,900;1,300;1,400;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Young+Serif&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>JavaScript projekts</title>
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <h1 id="nosaukums">Ķermeņa masas indeks</h1>
+            <h1 id="nosaukums">Ķermeņa masas indeks<p id="diena"></p><p id="datums"></p></h1>
         </div>
-
         <div class="main-body">
-            <div class="body-datums" style="float: both;">
-                <p id="diena"> </p>
-                <p id="datums"> </p>
-                <p></p>
-            </div>
-            <div class="kalkulators" style="float: left;">
+            <div class="kalkulators">
                 <div class="kalkulator-header">
                     <h1 class="kalkulator-title">Ķermeņa masas indeksa kalkulators</h1>
                 </div>
@@ -36,18 +33,20 @@
                 </div>
             </div>
 
-            <div class="body-text" style="float: right;">
+            <div class="body-text">
                 <h1 class="virsraksts">Kas ir ķermeņa masas indeks, keb ĶMI?</h1>
                 <p class="teksts">Ķermeņa masas indekss (ĶMI) ir vienkāršs, bet noderīgs rādītājs, kas palīdz noteikt cilvēka svara un auguma attiecību. Tas tiek izmantots, lai novērtētu cilvēka ķermeņa svara kritiskumu attiecībā pret viņa augumu. Ķermeņa masas indekss tiek aprēķināts, dalot personas svaru kilogramos ar kvadrātu viņa augumā metros.</p>
                 <h1 class="virsraksts">Kāpēc ir svarīgi satraukties par to?</h1>
                 <p class="teksts">Ir svarīgi uzmanīgi sekot līdzi savam ķermeņa masas indeksam un reaģēt, ja tas ir ārpus normālā diapazonā vai norāda uz iespējamām veselības problēmām. Satraukties par ķermeņa masas indeksu var būt pamatots, jo tas var būt saistīts ar daudzām veselības problēmām un riskiem.</p>
-                <p class="uz-otru-lpp"><a href="index-2.html">Papildinformācija </a>par ĶMI</p>
-                <img src="photos/svari.png" alt="svari" class="fotografija">        
+                <div class="tralala">
+                    <p class="uz-otru-lpp"><a href="index-2.html">Papildinformācija</a>par ĶMI</p>
+                    <img src="photos/svari.png" alt="svari" class="fotografija">                    
+                </div>
+                </div>       
             </div>
         </div>
-        <script src="script.js"></script>
     </div>
 
-    
+    <script src="script.js"></script>
 </body>
 </html>
